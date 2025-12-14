@@ -15,7 +15,7 @@
     const itemList = document.getElementById('itemList');
 
     loadBtn.addEventListener('click', () => {
-      fetch('http://localhost:3000/api/items')
+      fetch('https://project-fullstack-033a.onrender.com/api/items')
         .then(res => res.json())
         .then(data => {
           itemList.innerHTML = '';
